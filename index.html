@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Servidor Web ESP32</title>
+</head>
+<body>
+    <section class="control-panel">
+        <div class="panel-container">
+            <div id="input-data" class="body-panel">
+                <h2 class="text-title">Seleccione el rango de datos de la Tabla:</h2>
+                <label for="input-range" class="label-rango">Rango de filas:</label>
+                <input type="text" id="input-range" placeholder="1:-1" class="rango input-range">
+                <button type="button" id="button-download-table-data" id="mostrar-tabla">Enter</button>
+                <button class="button-36 btn_ultimas_tres_filas" role="button">Cargar las ultimas tres filas</button>
+            </div>
+        </div>
+    </section>
+    <section class="data-output">
+        <div class="loading-section">
+            <div id="floatingBarsG">
+                <div class="blockG" id="rotateG_01"></div>
+                <div class="blockG" id="rotateG_02"></div>
+                <div class="blockG" id="rotateG_03"></div>
+                <div class="blockG" id="rotateG_04"></div>
+                <div class="blockG" id="rotateG_05"></div>
+                <div class="blockG" id="rotateG_06"></div>
+                <div class="blockG" id="rotateG_07"></div>
+                <div class="blockG" id="rotateG_08"></div>
+            </div>
+        </div>
+
+        <div class="table-container" style="display:none">
+            <div class="table-title">
+                <h3>Data Table</h3>
+            </div>
+            <table class="table-fill my-table">
+                <thead>
+                    <tr>
+                        <th class="text-left"></th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover table-body">
+                    <tr>
+                        <td class="text-left"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
